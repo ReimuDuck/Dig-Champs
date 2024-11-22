@@ -1,8 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://5vlx6evfnd4o"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_68twb"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_evnd5"]
+[ext_resource type="Texture2D" uid="uid://bwpwa6yf2roqy" path="res://Picture1.jpg" id="2_fhojv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_365ou"]
 
@@ -15,9 +14,8 @@ script = ExtResource("1_68twb")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(-5.8519, 14.5554)
-rotation = -3.14159
-scale = Vector2(0.840841, -8.82111)
-texture = SubResource("CanvasTexture_evnd5")
+scale = Vector2(0.002, -0.02)
+texture = ExtResource("2_fhojv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-5.8519, 14.5554)
