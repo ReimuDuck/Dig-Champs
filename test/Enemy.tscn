@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5hi0aoq2vehq"]
+
+[ext_resource type="Texture2D" uid="uid://p64ojypajyfr" path="res://red.jpg" id="1_cs8k8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_islq1"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(69.375, -99.875)
+scale = Vector2(0.48822, 0.47067)
+texture = ExtResource("1_cs8k8")
+
+[node name="DetectionArea" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/DetectionArea"]
+light_mask = 2
+visibility_layer = 2
+scale = Vector2(10, 10)
+shape = SubResource("CircleShape2D_islq1")
+debug_color = Color(0.338583, 0.533441, 0.848287, 0.42)
